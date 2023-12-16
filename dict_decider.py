@@ -81,7 +81,7 @@ def main():
         num, extra_x = x_num(x)
         trig = y_trig(y,sub)
         print()
-        print("Go to r/" + sub + ".")
+        print("Go to https://www.reddit.com/r/" + sub + " .")
         print("Look at the next",num,"posts.")
         print("Edge every time you see " + trig + ".")
         if extra_x == True:
