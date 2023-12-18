@@ -1,14 +1,128 @@
 import random as r
 
 full_dict = {
-    "Thighs" : ["girl on her knees","fishnets","skirt","face",
-                "pair of thigh highs","selfie","\"sfw\" image","exposed midriff",
-                "exposed panties","cleavage","naked ass","fully nude girl",
-                "pussy","butt cheek","exposed nipple","solo image","thigh"],
-    "thighdeology" : ["thigh/butt being squeezed","topless girl","cameltoe",
-                      "pair of thigh highs","garter","skirt","exposed panties",
-                      "exposed midriff","\"sfw\" image","exposed boobs","bikini",
-                      "ass","solo image","thigh"]
+    "Thighs" : 
+    ["girl on her knees","fishnets","skirt","face",             #
+    "pair of thigh highs","selfie","\"sfw\" image",
+    "exposed midriff","exposed panties","cleavage","naked ass",
+    "fully nude girl","pussy","butt cheek","exposed nipple",
+    "solo image","thigh"],
+
+    "thighdeology" : 
+    ["thigh/butt being squeezed","topless girl",
+    "cameltoe","pair of thigh highs","garter","skirt",
+    "exposed panties","exposed midriff","\"sfw\" image",
+    "exposed boobs","bikini","ass","solo image","thigh"],
+
+    "ClothedForPrejacs" : 
+    ["girl with tattoo","cameltoe","underboob","underbutt",
+    "cleavage","fully clothed girl","ass in panties","midriff",
+    "girl in underwear","face","foot","\"sfw\" image"],
+
+    "facial" : 
+    ["fully naked girl","fully clothed girl","necklace/choker",
+    "dick in mouth","girl with glasses","girl with tongue out",
+    "girl with multiple loads","cum shot","dick","boobs",
+    "girl on knees","cum on chest","cum in mouth",
+    "cum on face"],
+
+    "cumsluts" : 
+    ["fully clothed girl","girl with multiple loads","creampie",
+    "dick in mouth","cum on ass","cum on chest","dick",
+    "pussy","ass","cum in mouth","cumshot","cum on body",
+    "girl with tongue out","girl on knees","cum on face","face",
+    "image with cum"],
+
+    "petite" : 
+    ["fully clothed girl","bikini","girl masturbating",
+    "girl on her knees","selfie","girl with tattoo","ass",
+    "\"sfw\" image","pussy","midriff","boobs","face","cleavage",
+    "girl in underwear","foot","fully nude girl","solo image"],
+
+    "midriff" :
+    ["naval piercing","image in public","ass","selfie",
+    "\"nsfw\" image","girl with abs","bikini","skirt",
+    "girl on knees","fully clothed girl","tatto","face",
+    "girl in underwear","cleavage","\"sfw\" image","midriff"],
+
+    "lesbians" :
+    ["face sitting","fingering","couple making out",
+    "group of 3+","strap-on","dildo","scissoring","boobs","ass",
+    "pussy","belly button","foot","fully nude girl",
+    "cunnilingus","nipple","lesbian"],
+
+    "PristineGirls" :
+    ["girl with jewelry","image with 2+ girls","outdoor image",
+    "partially clothed girl","full body shot","wet/oiled girl",
+    "eye contact","ass","boobs","pussy","belly button","foot",
+    "nipple","fully nude girl"],
+
+    "sexygirls" :
+    ["full body shot","dress","girl on knees",
+    "nipple through shirt","ass","midriff","cleavage","bikini",
+    "eye contact","image in public","selfie",
+    "girl in underwear","fully clothed girl","face",
+    "\"sfw\" image"],
+
+    "GodPussy" :
+    ["buttplug","girl with tatto","girl with top on",
+    "full body shot","underwear pushed to side","selfie",
+    "eye contact","girl touching pussy","girl on back",
+    "girl on knees","legs together","fully nude girl","face",
+    "foot","belly button","boobs","legs spread","ass",
+    "butthole","pussy"],
+
+    "EGirls" :
+    ["gaming chair","ahegao face","fully clothed girl",
+    "cosplay","girl with tattoo","colored hair","fake ears",
+    "selfie","fully nude girl","goth girl","ass","pussy",
+    "midriff","boobs","face","cleavage","thigh highs",
+    "girl in underwear","egirl"],
+
+    "AsiansGoneWild" :
+    ["fully clothed girl","bikini","girl masturbating",
+    "\"sfw\" image","girl on her knees","selfie",
+    "girl with tattoo","ass","pussy","midriff","boobs","face",
+    "cleavage","girl in underwear","foot","fully nude girl",
+    "solo image"],
+
+    "public" :
+    ["couple having sex","girl masturbating","blowjob",
+    "skirt lift","shirt/bra lift","pants/panties pulled down",
+    "bathroom","store","beach","forest","bottomless","topless",
+    "fully nude girl","outdoor image","pussy","ass","boobs",
+    "girl"],
+
+    "Bikini" :
+    ["nipple","full body shot","eye contact","selfie","foot",
+    "underboob","girl in water","\"nsfw\" image","beach","ass",
+    "midriff","cleavage","girl not in a bikini","face",
+    "bikini"],
+
+    "hentai" :
+    ["schoolgirl outfit","futanari","footjob","boobjob",
+    "cunnilingus","fingering","group image","blowjob",
+    "penetrative sex","fully clothed girl","solo image","dick",
+    "foot","pussy","ass","boobs","fully nude girl","girl"],
+
+    "rule34" :
+    ["futanari","footjob","boobjob","cunnilingus","fingering",
+    "irl cosplay","group image","3D render","blowjob",
+    "penetrative sex","fully clothed girl","solo image","dick",
+    "foot","pussy","ass","boobs","fully nude girl","girl",
+    "character you recognize",],
+
+    "FemboyHentai" :
+    ["female","chastity cage","catboy","fully clothed femboy",
+    "creampie","thigh highs","fishtail","bulge","blowjob",
+    "femboy masturbating","anal sex","cum","boy pussy","ass",
+    "dick"],
+
+    "FemBoys" :
+    ["chastity cage","fully clothed femboy","femboy with boobs",
+    "thigh highs","femboy on knees","femboy stroking","foot",
+    "anal","spread cheeks","skirt","panties","cum","bulge",
+    "solo image","boy pussy","ass","dick"],
 }
 
 def roll(sub):
@@ -116,7 +230,7 @@ def repeat_modes(mode,dif):
         print("Look at the next" + "\033[91m" , num , "\033[0m" + "posts.")
         print("Edge once for each " + trig + ".")
         print("Round score:",round_score,end = "")
-        if round_score > 20 and dif == 1:
+        if round_score > 23 and dif == 1:
             print(", good luck!")
         else:
             print("")
@@ -125,7 +239,7 @@ def repeat_modes(mode,dif):
             input("Press enter to continue.")
             continue
         elif end == True and mode == 1:
-            input("You are free, press enter to end.") 
+            input("You are free! Press enter to end.") 
             print("Final score:",score)
 
         if mode == 2:
